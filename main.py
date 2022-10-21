@@ -15,16 +15,7 @@
 - напишите функцию, которая удаляет из строки лишние пробелы
 """
 
-def summ(*args):
-    res = 0
-    error = False
-    for i in args:
-        if type(i) is int:
-            res = res + i
-        else:
-            error = True
-    if error:
-        return "Error: non-numeric arguments"
-
-print(summ(1, 2, 3, 'a'))
-
+def excessSpaces(string=''):
+    """Removes excess spaces from string. For example:'    hi    how    you've    been'"""
+    lst = string.split()
+    return ' '.join(lst)
