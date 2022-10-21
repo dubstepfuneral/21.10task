@@ -17,7 +17,14 @@
 
 def summ(*args):
     res = 0
+    error = False
     for i in args:
-        res = res + i
-    return res
+        if type(i) is int:
+            res = res + i
+        else:
+            error = True
+    if error:
+        return "Error: non-numeric arguments"
+
+print(summ(1, 2, 3, 'a'))
 
