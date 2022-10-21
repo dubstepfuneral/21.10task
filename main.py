@@ -21,4 +21,3 @@ def summ(*args):
         res = res + i
     return res
 
-print(summ(1, 2, 3))
