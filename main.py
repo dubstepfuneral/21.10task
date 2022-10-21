@@ -25,6 +25,3 @@ def summ(*args):
             error = True
     if error:
         return "Error: non-numeric arguments"
-
-print(summ(1, 2, 3, 'a'))
-
