@@ -15,16 +15,12 @@
 - напишите функцию, которая удаляет из строки лишние пробелы
 """
 
-def summ(*args):
-    res = 0
-    error = False
-    for i in args:
-        if type(i) is int:
-            res = res + i
-        else:
-            error = True
-    if error:
-        return "Error: non-numeric arguments"
-
-print(summ(1, 2, 3, 'a'))
-
+def palindromeCheck(string):
+    """Checks whether or not a string is a palindrome"""
+    string = string.replace(' ', '')
+    string = string.lower()
+    print(string)
+    if string == ''.join(reversed(list(string))):
+        return True
+    else:
+        return False
