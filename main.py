@@ -25,3 +25,4 @@ def summ(*args):
             error = True
     if error:
         return "Error: non-numeric arguments"
+    return res
